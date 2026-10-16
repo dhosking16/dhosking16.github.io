@@ -1,0 +1,5 @@
+.DS_Store
+.claude/
+# Original phone photos (may carry location data); publish converted JPEGs instead
+*.HEIC
+*.heic

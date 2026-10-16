@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--
+	Personal academic website of David Hosking.
+
+	Plain HTML and CSS, no build step. Content lives in this file; styling in assets/css/style.css.
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>David N. Hosking</title>
+	<meta name="description" content="David Hosking, Lecturer in Theoretical Plasma Physics at the University of Edinburgh, working on turbulence, magnetic reconnection, and magnetic fields in astrophysical and laboratory plasmas.">
+	<meta name="theme-color" content="#fffdf8">
+	<link rel="canonical" href="https://dhosking16.github.io/">
+	<link rel="icon" href="favicon-32.png?v=2" sizes="32x32" type="image/png">
+	<link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+	<!-- Link previews (Slack, LinkedIn, Bluesky, etc.); these need absolute URLs -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://dhosking16.github.io/">
+	<meta property="og:title" content="David N. Hosking">
+	<meta property="og:description" content="Lecturer in Theoretical Plasma Physics at the University of Edinburgh">
+	<meta property="og:image" content="https://dhosking16.github.io/images/og-image.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Turbulent field of magnetic-helicity density, with red and blue regions of opposite sign twisted together">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css?v=30">
+</head>
+<body id="top">
+
+	<!-- Masthead -->
+	<header class="masthead">
+		<h1 class="masthead__title"><a href="#top">David N. Hosking</a></h1>
+		<p class="masthead__dek">Lecturer in Theoretical Plasma Physics<br>University of Edinburgh</p>
+		<nav class="masthead__nav" aria-label="Sections">
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#research">Research</a></li>
+				<li><a href="#phd">PhD opportunities</a></li>
+				<li><a href="#publications">Publications</a></li>
+				<li><a href="#teaching">Teaching</a></li>
+				<li><a href="documents/cv.pdf">CV</a></li>
+			</ul>
+		</nav>
+		<ul class="links" aria-label="Profiles and contact">
+			<li><a href="mailto:dhosking@ed.ac.uk">Email</a></li>
+			<li><a href="https://scholar.google.com/citations?user=yJDCDt8AAAAJ">Google Scholar</a></li>
+			<li><a href="https://orcid.org/0000-0002-7958-6993">ORCID</a></li>
+			<li><a href="https://arxiv.org/search/?searchtype=author&amp;query=Hosking%2C+D+N">arXiv</a></li>
+			<li><a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Hosking%2C%20D.%20N.%22&sort=date%20desc">ADS</a></li>
+			<li><a href="https://github.com/dhosking16">GitHub</a></li>
+		</ul>
+	</header>
+
+	<main>
+
+		<!-- About -->
+		<section id="about" class="section">
+			<div class="intro">
+				<figure class="intro__portrait">
+					<img src="images/headshot.jpg" alt="Portrait of David Hosking" width="800" height="1000">
+				</figure>
+				<div class="intro__text prose">
+					<p>
+						I am a theoretical physicist interested in how complex, nonlinear systems with many degrees of freedom conspire to organise their dynamics. I primarily pursue this interest in the context of plasmas: gases of charged particles interacting through electric and magnetic fields. Their remarkably rich dynamics underpin the behaviour of myriad
+						astrophysical systems and of terrestrial devices that target clean-energy production through nuclear fusion. My research addresses problems
+						in both settings, spanning instabilities, waves, turbulence, magnetic reconnection, and the dynamo effect.
+					</p>
+					<p>
+						<strong>I am offering <a href="#phd">PhD projects</a> starting in 2027. Please do get in touch if you would like to work with&nbsp;me.</strong>
+					</p>
+					<p>
+						I studied Mathematical and Theoretical Physics at
+						<a href="https://www.merton.ox.ac.uk/">Merton College, Oxford</a> (MMathPhys, 2018)
+						and stayed on in Oxford for a DPhil in Astrophysics (2022), supervised by Alex Schekochihin and
+						Steven Balbus. My <a href="https://ora.ox.ac.uk/objects/uuid:2e694187-3a55-404e-9627-4f58fd4714e3">thesis</a>
+						was about how plasma turbulence decays, with consequences for magnetic fields in the early Universe. From 2022 to 2025 I was a
+						Postdoctoral Fellow at the
+						<a href="https://pcts.princeton.edu/">Princeton Center for Theoretical Science</a>; from 2025 to 2026 I was a
+						Research Fellow of <a href="https://www.cai.cam.ac.uk/">Gonville &amp; Caius College, University of Cambridge</a>;
+						and since September 2026 I have been
+						<a href="https://www.ph.ed.ac.uk/people/david-hosking">Lecturer (assistant professor) in Theoretical Plasma Physics at the University
+						of Edinburgh</a>.
+					</p>
+				</div>
+			</div>
+
+			<!-- Institutions. Crests from Wikimedia Commons; see README for attribution. -->
+			<ul class="affiliations" aria-label="Institutions">
+				<li><a href="https://www.ox.ac.uk/"><img src="images/logos/oxford.svg" alt="University of Oxford" width="877" height="1098" loading="lazy"><span>Oxford<small>2014&ndash;22</small></span></a></li>
+				<li><a href="https://pcts.princeton.edu/"><img src="images/logos/princeton.svg" alt="Princeton University" width="312" height="348" loading="lazy"><span>Princeton<small>2022&ndash;25</small></span></a></li>
+				<li><a href="https://www.cai.cam.ac.uk/"><img src="images/logos/cambridge.svg" alt="University of Cambridge" width="2000" height="2339" loading="lazy"><span>Cambridge<small>2025&ndash;26</small></span></a></li>
+				<li><a href="https://www.ph.ed.ac.uk/"><img src="images/logos/edinburgh.svg" alt="University of Edinburgh" width="539" height="642" loading="lazy"><span>Edinburgh<small>2026&ndash;</small></span></a></li>
+			</ul>
+
+		</section>
+
+		<div class="ornament" aria-hidden="true"><span>&#9670;</span></div>
+
+		<!-- Research -->
+		<section id="research" class="section">
+			<header class="section__head">
+				<h2 class="section__label">Research</h2>
+			</header>
+
+			<div class="prose">
+				<p>
+					What follows gives a flavour of two strands of my research.
+				</p>
+			</div>
+
+			<article class="topic">
+				<h3>Decaying turbulence in magnetised plasmas</h3>
+				<div class="prose">
+					<p>
+						Imagine stirring up a fluid with very low viscosity and then allowing the turbulent
+						motions to decay away. How would the energy of the flow depend on time? The answer is
+						that energy decays on the turnover timescale of the largest eddies: roughly, the time
+						such an eddy takes to complete one rotation. That timescale, in turn, is constrained by
+						the need to preserve certain dynamical invariants related to the random momentum
+						carried by large patches of fluid.
+					</p>
+					<p>
+						What about magnetic fields in a plasma? In this case, magnetic structures relax towards
+						local quasi-equilibrium states with random, non-zero magnetic helicity&mdash;a measure
+						of the twist and linkage of magnetic field lines. Even when the total magnetic helicity
+						vanishes, large regions contain random excesses of positive or negative helicity, and
+						a statistical measure of these fluctuations remains approximately conserved as the
+						field relaxes. In cases where the energy of the magnetic field dominates over that of
+						plasma flows, magnetic reconnection&mdash;the breaking and rejoining of field lines that
+						lets neighbouring structures merge&mdash;controls the decay timescale, while helicity
+						conservation constrains how field strength and structure size evolve together
+						(<a href="https://doi.org/10.1103/PhysRevX.11.041005">Phys. Rev. X, 2021</a>).
+					</p>
+					<figure class="fig">
+						<div class="fig__pair fig__pair--photos" style="--cols: 1.380fr 1.181fr">
+							<img src="images/grid-turbulence.jpg" alt="Smoke streaklines passing through a grid, breaking up into decaying turbulence downstream" loading="lazy" width="900" height="652">
+							<img src="images/mhd-field-lines.jpg" alt="Tangled bundles of magnetic field lines, coloured red and blue, from a simulation of decaying MHD turbulence" loading="lazy" width="900" height="762">
+						</div>
+						<figcaption>Decaying turbulence in a fluid and in a plasma. In the smoke photograph the flow moves from left to right, so distance behind the grid stands in for time: smooth streaklines break up into eddies that decay downstream (from M. Van Dyke, <i>An Album of Fluid Motion</i>, 1982). The magnetohydrodynamic (MHD) simulation shows tangled bundles of magnetic field lines in decaying turbulence.</figcaption>
+					</figure>
+					<p>
+						These ideas explain several puzzling features of relaxing chaotic
+						magnetic fields, chief among them their tendency to transfer energy to larger scales,
+						even when their total helicity vanishes. They also have consequences for cosmology:
+						they imply that magnetic fields generated at the electroweak
+						phase transition, a fraction of a nanosecond after the Big Bang, could survive to the
+						present with strengths several orders of magnitude greater than earlier estimates,
+						consistent with magnetic-field constraints inferred from gamma-ray observations of
+						blazars (<a href="https://doi.org/10.1038/s41467-023-43258-3">Nature Commun., 2023</a>).
+					</p>
+				</div>
+				<figure class="fig">
+					<img src="images/helicity-dynamo.jpg" alt="Turbulent field of magnetic-helicity density, with red and blue regions of opposite sign twisted together" loading="lazy" width="1800" height="1115">
+					<figcaption>Magnetic-helicity density in a simulation of decaying MHD turbulence, started from the saturated state of a turbulent dynamo; red and blue indicate opposite signs of magnetic-helicity density. Random excesses of one sign over large regions, and the need to conserve them statistically, constrain how the field can decay. Simulation by <a href="https://web.astro.princeton.edu/people/zachary-hemler">Zach Hemler</a>.</figcaption>
+				</figure>
+			</article>
+
+			<article class="topic">
+				<h3>Explosive instabilities in fusion plasmas</h3>
+				<div class="prose">
+					<p>
+						Magnetically confined plasmas in fusion experiments can sometimes lose their equilibria
+						in dramatic fashion. In tokamaks (doughnut-shaped magnetic-confinement devices)
+						operating in high-confinement mode, type-I edge-localised modes (ELMs) expel hot plasma
+						from the edge, causing sudden energy losses and potentially damaging heat loads on
+						surrounding components. One possible explanation for these abrupt eruptions is that the
+						plasma edge is metastable beforehand: stable to small disturbances, but unstable to
+						sufficiently large perturbations. I have been looking for simplified plasma regimes in
+						which such states and their relaxation can be studied tractably.
+					</p>
+					<p>
+						Two-dimensional interchanges of flux tubes, in which tubes of magnetic flux swap places
+						much as buoyant fluid rises in convection, turn out to be one. There, we can calculate
+						the available energy of a metastable equilibrium (the energy it could release by
+						rearranging its flux tubes) by combinatorial optimisation, and develop statistical
+						predictions for the state to which it relaxes
+						(<a href="https://doi.org/10.1017/S0022377824001521">J. Plasma Phys., 2025</a>).
+					</p>
+					<p>
+						A rotating Z-pinch, a column of plasma confined by the magnetic field of a current
+						flowing along it, provides a second example. There, a sheared flow can sustain a
+						transport barrier: a layer in which a steep pressure gradient is held stable. Under
+						slow heating, the barrier steepens until a stable flux-tube equilibrium disappears in a
+						saddle-node bifurcation (it merges with an unstable equilibrium and vanishes),
+						triggering an eruption. The transport barrier then rebuilds, and the cycle repeats
+						(<a href="https://arxiv.org/abs/2602.06012">arXiv, 2026</a>).
+					</p>
+				</div>
+				<figure class="fig">
+					<img src="images/metastable-eruption.jpg" alt="Six frames from a simulation in which a small rising plume grows, erupts, and mixes a stratified plasma" loading="lazy" width="2174" height="620">
+					<figcaption>A metastable equilibrium, kicked by a localised force, erupts. Frames from a two-dimensional simulation of interchange dynamics under gravity, later times to the right. Colour shows a quantity that controls how compressible the plasma is, with red marking more compressible material: watch the small plume rise, grow and finally mix the layers. From <a href="https://doi.org/10.1017/S0022377824001521">J. Plasma Phys. 91, E35 (2025)</a>.</figcaption>
+				</figure>
+				<figure class="fig">
+					<div class="fig__pair">
+						<img class="fig__plain" src="images/zpinch-illustration.png" alt="Schematic of a Z-pinch: an annulus of plasma around a current-carrying rod, encircled by magnetic field lines and by a flow along them" loading="lazy" width="1078" height="816">
+						<div class="fig__video">
+							<iframe src="https://www.youtube-nocookie.com/embed/8U26HgsziPM?rel=0" title="Interchange turbulence in a Z-pinch with a transport barrier" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+						</div>
+					</div>
+					<figcaption>Schematic: a rotating Z-pinch. Plasma of pressure p is confined by the azimuthal magnetic field B of an axial current I, and flows along the field with velocity u<sub>&phi;</sub>. Movie: interchange turbulence in a Z-pinch with a transport barrier. Under slow heating the barrier collapses and rebuilds in a cycle: a simplified model that reproduces key features of the ELM cycle. From <a href="https://arxiv.org/abs/2602.06012">arXiv:2602.06012</a>.</figcaption>
+				</figure>
+			</article>
+
+		</section>
+
+		<div class="ornament" aria-hidden="true"><span>&#9670;</span></div>
+
+		<!-- PhD opportunities -->
+		<section id="phd" class="section">
+			<header class="section__head">
+				<h2 class="section__label">PhD opportunities</h2>
+			</header>
+
+			<div class="prose">
+				<p>
+					I am offering PhD projects in theoretical plasma physics starting in 2027, building on the
+					research strands described above.
+				</p>
+				<p>
+					<strong>Project descriptions, funding and application details: coming soon.</strong>
+					In the meantime, please <a href="mailto:dhosking@ed.ac.uk">get in touch by email</a>
+					if you are interested.
+				</p>
+				<p>
+					Please write your enquiry in your own words, rather than using AI to compose it. I would
+					be delighted to receive a short, informal email explaining your interests and what
+					attracts you to my research. Polished prose is unnecessary.
+				</p>
+			</div>
+		</section>
+
+		<div class="ornament" aria-hidden="true"><span>&#9670;</span></div>
+
+		<!-- Publications -->
+		<section id="publications" class="section">
+			<header class="section__head">
+				<h2 class="section__label">Publications</h2>
+				<p class="section__dek">
+					Also on
+					<a href="https://scholar.google.com/citations?user=yJDCDt8AAAAJ">Google Scholar</a>,
+					<a href="https://arxiv.org/search/?searchtype=author&amp;query=Hosking%2C+D+N">arXiv</a>,
+					<a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Hosking%2C%20D.%20N.%22&sort=date%20desc">ADS</a>, and
+					<a href="https://orcid.org/0000-0002-7958-6993">ORCID</a>.
+				</p>
+			</header>
+
+			<h3 class="ledger__group">Preprints</h3>
+			<ol class="ledger">
+				<li class="ledger__item">
+					<span class="ledger__meta">2026</span>
+					<div class="ledger__body">
+						<span class="pub__authors"><strong>D. N. Hosking</strong>, L. Swinnerton &amp; R. Kesavan</span>
+						<cite class="pub__title">Explosive eruption cycles in a rotating Z-pinch</cite>
+						<span class="pub__venue">arXiv:2602.06012 <span class="pub__links"><a href="https://arxiv.org/abs/2602.06012">arXiv</a></span></span>
+					</div>
+				</li>
+			</ol>
+
+			<h3 class="ledger__group">Journal articles</h3>
+			<ol class="ledger">
+				<li class="ledger__item">
+					<span class="ledger__meta">2026</span>
+					<div class="ledger__body">
+						<span class="pub__authors">P. Reichherzer, G. Gregori, <strong>D. N. Hosking</strong> &amp; S. Sarkar</span>
+						<cite class="pub__title">Generative diffusion surrogates with analytical variance schedule</cite>
+						<span class="pub__venue"><i>Nature Commun.</i> 17, 10408 <span class="pub__links"><a href="https://doi.org/10.1038/s41467-026-77769-6">DOI</a><a href="https://arxiv.org/abs/2609.01705">arXiv</a></span></span>
+					</div>
+				</li>
+				<li class="ledger__item">
+					<span class="ledger__meta">2026</span>
+					<div class="ledger__body">
+						<span class="pub__authors">J. K. J. Hew, <strong>D. N. Hosking</strong>, C. Federrath, J. R. Beattie &amp; N. Kriel</span>
+						<cite class="pub__title">Conservation of magnetic-helicity fluctuations due to spatial decorrelation of fluxes in decaying MHD turbulence</cite>
+						<span class="pub__venue"><i>J. Plasma Phys.</i> 92, E38 <span class="pub__links"><a href="https://doi.org/10.1017/S0022377826101275">DOI</a><a href="https://arxiv.org/abs/2511.09543">arXiv</a></span></span>
+					</div>
+				</li>
+				<li class="ledger__item">
+					<span class="ledger__meta">2025</span>
+					<div class="ledger__body">
+						<span class="pub__authors"><strong>D. N. Hosking</strong>, I. G. Abel &amp; S. C. Cowley</span>
+						<cite class="pub__title">Forced 3D reconnection in an exponentially separating magnetic field</cite>
+						<span class="pub__venue"><i>Phys. Rev. Lett.</i> 135, 255101 <span class="pub__links"><a href="https://doi.org/10.1103/rd5d-93l7">DOI</a><a href="https://arxiv.org/abs/2412.01736">arXiv</a></span></span>
+					</div>
+				</li>
+				<li class="ledger__item">
+					<span class="ledger__meta">2025</span>
+					<div class="ledger__body">
+						<span class="pub__authors"><strong>D. N. Hosking</strong>, D. Wasserman &amp; S. C. Cowley</span>
+						<cite class="pub__title">Metastability of stratified magnetohydrostatic equilibria and their relaxation</cite>
+						<span class="pub__venue"><i>J. Plasma Phys.</i> 91, E35 <span class="pub__links"><a href="https://doi.org/10.1017/S0022377824001521">DOI</a><a href="https://arxiv.org/abs/2401.01336">arXiv</a></span></span>
+					</div>
+				</li>
+				<li class="ledger__item">
+					<span class="ledger__meta">2023</span>
+					<div class="ledger__body">
+						<span class="pub__authors"><strong>D. N. Hosking</strong> &amp; A. A. Schekochihin</span>
+						<cite class="pub__title">Cosmic-void observations reconciled with primordial magnetogenesis</cite>
+						<span class="pub__venue"><i>Nature Commun.</i> 14, 7523 <span class="pub__links"><a href="https://doi.org/10.1038/s41467-023-43258-3">DOI</a><a href="https://arxiv.org/abs/2203.03573">arXiv</a></span></span>
+					</div>
+				</li>
+				<li class="ledger__item">
+					<span class="ledger__meta">2023</span>
+					<div class="ledger__body">
+						<span class="pub__authors"><strong>D. N. Hosking</strong> &amp; A. A. Schekochihin</span>
+						<cite class="pub__title">Emergence of long-range correlations and thermal spectra in forced turbulence</cite>
+						<span class="pub__venue"><i>J. Fluid Mech.</i> 973, A13 <span class="pub__links"><a href="https://doi.org/10.1017/jfm.2023.643">DOI</a><a href="https://arxiv.org/abs/2202.00462">arXiv</a></span></span>
+					</div>
+				</li>
+				<li class="ledger__item">
+					<span class="ledger__meta">2021</span>
+					<div class="ledger__body">
+						<span class="pub__authors"><strong>D. N. Hosking</strong> &amp; A. A. Schekochihin</span>
+						<cite class="pub__title">Reconnection-controlled decay of magnetohydrodynamic turbulence and the role of invariants</cite>
+						<span class="pub__venue"><i>Phys. Rev. X</i> 11, 041005 <span class="pub__links"><a href="https://doi.org/10.1103/PhysRevX.11.041005">DOI</a><a href="https://arxiv.org/abs/2012.01393">arXiv</a></span></span>
+					</div>
+				</li>
+				<li class="ledger__item">
+					<span class="ledger__meta">2020</span>
+					<div class="ledger__body">
+						<span class="pub__authors"><strong>D. N. Hosking</strong> &amp; L. Sironi</span>
+						<cite class="pub__title">A first-principle model for polarization swings during reconnection-powered flares</cite>
+						<span class="pub__venue"><i>Astrophys. J. Lett.</i> 900, L23 <span class="pub__links"><a href="https://doi.org/10.3847/2041-8213/abafa6">DOI</a><a href="https://arxiv.org/abs/2007.14992">arXiv</a></span></span>
+					</div>
+				</li>
+				<li class="ledger__item">
+					<span class="ledger__meta">2020</span>
+					<div class="ledger__body">
+						<span class="pub__authors"><strong>D. N. Hosking</strong>, A. A. Schekochihin &amp; S. A. Balbus</span>
+						<cite class="pub__title">Elasticity of tangled magnetic fields</cite>
+						<span class="pub__venue"><i>J. Plasma Phys.</i> 86, 905860511 <span class="pub__links"><a href="https://doi.org/10.1017/S0022377820001191">DOI</a><a href="https://arxiv.org/abs/2006.15141">arXiv</a></span></span>
+					</div>
+				</li>
+			</ol>
+
+			<h3 class="ledger__group">Thesis</h3>
+			<ul class="ledger">
+				<li class="ledger__item">
+					<span class="ledger__meta">2022</span>
+					<div class="ledger__body">
+						<span class="pub__authors"><strong>D. N. Hosking</strong></span>
+						<cite class="pub__title">The decay of MHD turbulence and the primordial origin of magnetic fields in cosmic voids</cite>
+						<span class="pub__venue">DPhil thesis, University of Oxford <span class="pub__links"><a href="https://ora.ox.ac.uk/objects/uuid:2e694187-3a55-404e-9627-4f58fd4714e3">ORA</a></span></span>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<div class="ornament" aria-hidden="true"><span>&#9670;</span></div>
+
+		<!-- Teaching -->
+		<section id="teaching" class="section">
+			<header class="section__head">
+				<h2 class="section__label">Teaching</h2>
+			</header>
+
+			<div class="prose">
+				<p>
+					I advise group projects as part of the course <a href="https://www.drps.ed.ac.uk/26-27/dpt/cxphys11073.htm">Theoretical Methods for Fusion and Astrophysical Plasmas</a> (kinetic theory). I also conduct viva-style assessments for the <a href="https://www.drps.ed.ac.uk/26-27/dpt/cxphys10090.htm">Numerical Recipes</a> course. For more details on my past teaching endeavours, see my <a href="documents/cv.pdf">CV</a>.
+				</p>
+				<figure class="fig">
+					<img src="images/blackboard.jpg" alt="A blackboard covered in chalk calculations of magnetic-helicity fluctuations, with a sketch of linked field lines and a diagram inside a large circle" loading="lazy" width="1600" height="882">
+				</figure>
+			</div>
+
+			<article class="topic">
+				<h3>Lecture notes</h3>
+				<div class="prose">
+					<p>
+						Notes from the lectures I gave at the 2023 NSF/APS-DPP Summer School on Plasma
+						Physics for Astrophysicists, on
+						<a href="https://static1.squarespace.com/static/5c4cc0994cde7afac7ddf912/t/6474e659c64942040f6be0fa/1685382746559/HoskingLecture1.pdf">the fundamentals of fluid dynamics</a> and on
+						<a href="https://static1.squarespace.com/static/5c4cc0994cde7afac7ddf912/t/64765e81f1682226d4ab3418/1685479044036/HoskingLecture2.pdf">MHD relaxation</a>.
+					</p>
+				</div>
+			</article>
+		</section>
+
+	</main>
+
+	<footer class="colophon">
+		<p>
+			&copy; 2026 David Hosking &middot; Updated October 2026 &middot;
+			<a href="mailto:dhosking@ed.ac.uk">Email</a> &middot;
+			<a href="https://github.com/dhosking16/dhosking16.github.io">Source</a> &middot;
+			<a href="#top">Top</a>
+		</p>
+	</footer>
+
+	<a href="#top" class="to-top" aria-label="Back to top">
+		<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5"/></svg>
+	</a>
+
+	<script>
+		// Copy the masthead links into a side nav for the left margin.
+		const sideNav = document.createElement("nav");
+		sideNav.className = "side-nav";
+		sideNav.setAttribute("aria-label", "Jump to section");
+		sideNav.append(document.querySelector(".masthead__nav ul").cloneNode(true));
+		document.body.append(sideNav);
+
+		// Show the side nav and back-to-top button once the masthead is out of view. The top
+		// strip matching scroll-padding-top doesn't count, so jumping to #about (which leaves
+		// that much of the masthead showing) still shows them.
+		const toTop = document.querySelector(".to-top");
+		const scrollPadding = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+		new IntersectionObserver(([entry]) => {
+			toTop.classList.toggle("is-visible", !entry.isIntersecting);
+			sideNav.classList.toggle("is-visible", !entry.isIntersecting);
+		}, { rootMargin: `-${Math.ceil(scrollPadding) + 1}px 0px 0px 0px` }).observe(document.querySelector(".masthead"));
+
+		// Mark the side-nav link for the section crossing a line 30% down the window.
+		const sectionObserver = new IntersectionObserver((entries) => {
+			for (const entry of entries) {
+				if (!entry.isIntersecting) continue;
+				for (const link of sideNav.querySelectorAll("a")) {
+					link.toggleAttribute("aria-current", link.hash === "#" + entry.target.id);
+				}
+			}
+		}, { rootMargin: "-30% 0px -70% 0px" });
+		document.querySelectorAll("main section[id]").forEach((section) => sectionObserver.observe(section));
+	</script>
+
+</body>
+</html>
