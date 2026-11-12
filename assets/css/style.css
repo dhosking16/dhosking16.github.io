@@ -267,15 +267,17 @@ main {
 
 /* Institution crests */
 
+/* Equal-width columns, so the crests line up when they wrap: a flex row sized each item to its
+   label and centred each line on its own, which left the 2x2 phone layout lopsided */
 .affiliations {
 	list-style: none;
 	max-width: 46rem;
 	margin: 2.8rem auto 0;
 	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(4, 7rem);
 	justify-content: center;
-	gap: 1.5rem 3.5rem;
+	gap: 1.5rem 2rem;
 }
 
 .affiliations li {
@@ -613,6 +615,14 @@ main {
 
 	.ledger__meta {
 		padding-top: 0;
+	}
+}
+
+/* Four crests in a row need about 37rem */
+@media (max-width: 40rem) {
+	.affiliations {
+		grid-template-columns: repeat(2, 7rem);
+		gap: 1.8rem 2.5rem;
 	}
 }
 
